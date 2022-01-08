@@ -28,9 +28,8 @@ iface = gr.Interface(
     gr.outputs.Label(num_top_classes=len(labels)),
     capture_session=True,
     interpretation="default",
-    title='COVID-19 classification using Convolutional Autoencoding Approach',
-    description='This is a demo app for COVID-19 classification'
-    )
+    title='Clasificación COVID-19 utilizando el Método de codificación automática convolucional',
+    description='Esta es una aplicación de demostración para la clasificación COVID-19')
 
 if __name__ == "__main__":
-    iface.launch()
+    iface.launch(share=True)
